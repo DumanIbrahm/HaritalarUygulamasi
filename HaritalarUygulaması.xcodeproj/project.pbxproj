@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		04F29AFE29BCCC6E00FBC005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F29AFD29BCCC6E00FBC005 /* AppDelegate.swift */; };
 		04F29B0029BCCC6E00FBC005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F29AFF29BCCC6E00FBC005 /* SceneDelegate.swift */; };
-		04F29B0229BCCC6E00FBC005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F29B0129BCCC6E00FBC005 /* ViewController.swift */; };
+		04F29B0229BCCC6E00FBC005 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F29B0129BCCC6E00FBC005 /* MapViewController.swift */; };
 		04F29B0529BCCC6E00FBC005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F29B0329BCCC6E00FBC005 /* Main.storyboard */; };
 		04F29B0829BCCC6E00FBC005 /* HaritalarUygulamas_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04F29B0629BCCC6E00FBC005 /* HaritalarUygulamas_.xcdatamodeld */; };
 		04F29B0A29BCCC7000FBC005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F29B0929BCCC7000FBC005 /* Assets.xcassets */; };
 		04F29B0D29BCCC7000FBC005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F29B0B29BCCC7000FBC005 /* LaunchScreen.storyboard */; };
+		04F29B1529BCDC0A00FBC005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F29B1429BCDC0A00FBC005 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04F29AFA29BCCC6E00FBC005 /* HaritalarUygulaması.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HaritalarUygulaması.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F29AFD29BCCC6E00FBC005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04F29AFF29BCCC6E00FBC005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04F29B0129BCCC6E00FBC005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04F29B0129BCCC6E00FBC005 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		04F29B0429BCCC6E00FBC005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04F29B0729BCCC6E00FBC005 /* HaritalarUygulamas_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HaritalarUygulamas_.xcdatamodel; sourceTree = "<group>"; };
 		04F29B0929BCCC7000FBC005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04F29B0C29BCCC7000FBC005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F29B0E29BCCC7000FBC005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F29B1429BCDC0A00FBC005 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				04F29AFD29BCCC6E00FBC005 /* AppDelegate.swift */,
 				04F29AFF29BCCC6E00FBC005 /* SceneDelegate.swift */,
-				04F29B0129BCCC6E00FBC005 /* ViewController.swift */,
+				04F29B1429BCDC0A00FBC005 /* ViewController.swift */,
+				04F29B0129BCCC6E00FBC005 /* MapViewController.swift */,
 				04F29B0329BCCC6E00FBC005 /* Main.storyboard */,
 				04F29B0929BCCC7000FBC005 /* Assets.xcassets */,
 				04F29B0B29BCCC7000FBC005 /* LaunchScreen.storyboard */,
@@ -141,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F29B0229BCCC6E00FBC005 /* ViewController.swift in Sources */,
+				04F29B1529BCDC0A00FBC005 /* ViewController.swift in Sources */,
+				04F29B0229BCCC6E00FBC005 /* MapViewController.swift in Sources */,
 				04F29AFE29BCCC6E00FBC005 /* AppDelegate.swift in Sources */,
 				04F29B0829BCCC6E00FBC005 /* HaritalarUygulamas_.xcdatamodeld in Sources */,
 				04F29B0029BCCC6E00FBC005 /* SceneDelegate.swift in Sources */,
