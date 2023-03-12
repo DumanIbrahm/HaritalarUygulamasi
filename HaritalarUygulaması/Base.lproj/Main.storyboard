@@ -17,15 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="I4d-CM-vSc">
-                                <rect key="frame" x="0.0" y="166" width="414" height="630"/>
+                                <rect key="frame" x="0.0" y="210" width="414" height="586"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Başlık Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iQH-N5-hah">
-                                <rect key="frame" x="20" y="51" width="374" height="34"/>
+                                <rect key="frame" x="20" y="95" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Açıklama Giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdX-6F-IAd">
-                                <rect key="frame" x="20" y="104" width="374" height="34"/>
+                                <rect key="frame" x="20" y="148" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -67,6 +67,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ENQ-Yd-8ub" secondAttribute="bottom" constant="11" id="zNo-vV-9ax"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JfI-eK-LLA"/>
                     <connections>
                         <outlet property="descriptionTextField" destination="rdX-6F-IAd" id="gyr-nd-zup"/>
                         <outlet property="mapView" destination="I4d-CM-vSc" id="ecX-yA-Nvf"/>
@@ -102,7 +103,7 @@
                     <navigationItem key="navigationItem" id="Zbh-Q7-bxi"/>
                     <connections>
                         <outlet property="tableView" destination="OMv-k8-h9B" id="Qor-N1-Ba1"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMapsVC" modalPresentationStyle="fullScreen" id="FLD-fQ-PFO"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMapsVC" id="FLD-fQ-PFO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DOt-zA-TaK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
