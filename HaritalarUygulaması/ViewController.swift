@@ -16,7 +16,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var chosenPlaceName = ""
     var chosenPlaceID : UUID?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -41,7 +40,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             nameArray.count
     }
-    
    @objc func takeData(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -78,7 +76,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             destinationVC.chosenID = chosenPlaceID
         }
     }
-    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let title = "Sil"
         let deleteAction = UIContextualAction(style: .normal, title: title) { action, view, completion in
@@ -88,11 +85,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             completion(true)
         }
         deleteAction.backgroundColor = .red
-        
         let config = UISwipeActionsConfiguration(actions: [deleteAction])
         return config
     }
-    
     func removeItem(listItem: UUID){
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let managedContext = appDelegate.persistentContainer.viewContext
@@ -103,7 +98,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             if let result = try? managedContext.fetch(fetchRequest){
                 for item in result {
                     managedContext.delete(item)
-                    
                 }
                 do{
                     try managedContext.save()
@@ -112,5 +106,4 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
                 }
             }
         }
-    
 }

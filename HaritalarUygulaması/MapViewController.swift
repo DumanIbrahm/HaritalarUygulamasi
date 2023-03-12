@@ -28,7 +28,6 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         mapView.delegate = self
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -137,7 +136,6 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             annotation.title = titleTextField.text
             annotation.subtitle = descriptionTextField.text
             mapView.addAnnotation(annotation)
-            
         }
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -147,12 +145,8 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
             let region = MKCoordinateRegion(center: location, span: span)
             mapView.setRegion(region, animated: true)
         }else{
-            
         }
-        
     }
-    
-    
     @IBAction func SaveButton(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
@@ -173,6 +167,5 @@ class MapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDel
         NotificationCenter.default.post(name: NSNotification.Name("newPlaceCreated"), object: nil)
         navigationController?.popViewController(animated: true)
     }
-    
 }
 
